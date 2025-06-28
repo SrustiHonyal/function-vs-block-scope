@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Scope Demo</title>
+</head>
+<body>
+  <h1>Open the console to see the output</h1>
+
+  <script>
+    let globalVar = "I am global"; 
+
+    function testScope() {
+      let functionVar = "I am inside a function"; 
+
+      if (true) {
+        let blockVar = "I am inside if block"; 
+        console.log(blockVar); 
+      }
+
+      console.log(functionVar); 
+    }
+
+    testScope();
+
+    console.log(globalVar); 
+    
+  </script>
+</body>
+</html>
